@@ -219,6 +219,11 @@ body {
     align-items: center;
 }
 
+.pintura
+{
+    width: 50%;
+}
+
 .random-image
 {
     height: auto;
