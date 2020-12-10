@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: silver;
+    color: black;
+    font-weight: 300;
+    line-height: 1.6;  
+}
+
+.contenedor
+{
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: .05fr repeat(6, 1fr);
+    grid-template-areas:
+    "Navi Navi Navi Navi Navi Navi"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "hero hero hero hero hero hero"
+    "feature feature feature feature feature feature"
+    "feature feature feature feature feature feature"
+    "feature feature feature feature feature feature"
+    "post post post post post post"
+    "post post post post post post"
+    "post post post post post post"
+    "social social social social social social"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer";
+}
+
+.NaviationCenter 
+{
+    background-color: floralwhite;
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    grid-area: Navi;
+    grid-template-areas: 
+    "logo nav boton"
+}
+
+.logo 
+{
+    grid-area: logo;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.botones 
+{
+    grid-area: nav;
+    text-decoration: none;
+}
+
+.navegador 
+{
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    list-style: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.links 
+{
+    color: black;
+}
+
+.login
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.btn 
+{
+    display: flex;
+    border: none;
+    justify-content: center;
+    width: 10rem;
+    grid-area: boton;
+    
+    transition: all 2s;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+  
+.btn:hover
+{
+    color: white;
+    background-color: black;
+    transition: 2s all;
+}
+
+
+.HeroCenter 
+{
+    display: grid;
+    height: 40rem;
+    grid-area: hero;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+
+}
+
+.cabeza 
+{
+    display: flex;
+    height: 30rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo
+{
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.parrafo
+{
+    letter-spacing: 0.1;
+    width: 30rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-hero
+{   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all .3s;
+    font-weight: 400;
+    height: 5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+.btn-hero:hover
+{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: .3s all;
+}
+
+.FeatureListLeft 
+{
+    display: grid;
+    grid-area: feature;
+}
+
+.PostsBlogLeft 
+{
+    display: grid;
+    grid-area: post;
+}
+
+.SocialProof 
+{
+    display: grid;
+    grid-area: social;
+}
+
+.FooterBlogPost 
+{
+    display: grid;
+    grid-area: footer;
+}
