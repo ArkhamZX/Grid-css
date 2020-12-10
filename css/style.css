@@ -13,7 +13,7 @@ body {
     background-color: silver;
     color: black;
     font-weight: 300;
-    line-height: 1.6;  
+    line-height: 1.6; 
 }
 
 .contenedor
@@ -25,10 +25,9 @@ body {
 
     grid-auto-flow: column;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: .05fr repeat(6, 1fr);
+    grid-template-rows: 6rem repeat(12, 1fr);
     grid-template-areas:
     "Navi Navi Navi Navi Navi Navi"
-    "hero hero hero hero hero hero"
     "hero hero hero hero hero hero"
     "hero hero hero hero hero hero"
     "hero hero hero hero hero hero"
@@ -46,7 +45,6 @@ body {
 .NaviationCenter 
 {
     background-color: floralwhite;
-    height: 6rem;
     display: grid;
     align-items: center;
     grid-area: Navi;
@@ -120,7 +118,6 @@ body {
 .HeroCenter 
 {
     display: grid;
-    height: 40rem;
     grid-area: hero;
     justify-content: center;
     align-items: center;
@@ -146,10 +143,9 @@ body {
 
 .parrafo
 {
-    letter-spacing: 0.1;
+    letter-spacing: 0.1px;
     width: 30rem;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn-hero
@@ -180,6 +176,53 @@ body {
 {
     display: grid;
     grid-area: feature;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "list cua";
+}
+
+
+.list-left
+{
+    grid-area: list;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.listas
+{
+    display: grid;
+    grid-auto-rows: 3rem;
+    align-items: center;
+}
+
+.beneficios 
+{
+    font-size: 1.3rem;
+}
+
+.titulo-2
+{
+    font-size: 1.5rem;
+}
+
+.cuadro
+{
+    grid-area: cua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-image
+{
+    height: auto;
+    width: 100%;
 }
 
 .PostsBlogLeft 
