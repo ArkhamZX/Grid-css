@@ -1,84 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Grid css</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' href='css/style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
-
-    <div class="contenedor">
-        <header class="NaviationCenter">
-            <div class="logo">
-                Trade
+<body class="container">
+    <header class="header">
+        <div class="header__logo">
+            Trade
+        </div>
+        <nav class="header__nav">
+            <ul class="header__bar">
+                <li class="header__link"><a href="#" class="header__link--boton">link 1</a></li>
+                <li class="header__link"><a href="#" class="header__link--boton">link 2</a></li>
+                <li class="header__link"><a href="#" class="header__link--boton">link 3</a></li>
+                <li class="header__link"><a href="#" class="header__link--boton">link 4</a></li>
+            </ul>
+        </nav>
+        <div class="header__btn">
+            <button class="header__btn--login">
+                Sing Up
+            </button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__center">
+            <h1 class="hero__title">
+                Value Proposition
+            </h1>
+            <p class="hero__parrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam eligendi, minus ducimus atque placeat magnam fuga quae!
+            </p>
+            <div class="btn-hero">
+                <button class="hero_star--btn">
+                    Start free trial
+                </button>
             </div>
-            <nav class="botones">
-                <ul class="navegador">
-                    <li><a href="#" class="links">link 1</a></li>
-                    <li><a href="#" class="links">link 2</a></li>
-                    <li><a href="#" class="links">link 3</a></li>
-                    <li><a href="#" class="links">link 4</a></li>
-                </ul>
-            </nav>
-            <div class="login">
-                <a href=" #" class="btn btn-Sign-up">Sign up</a>
-            </div>
-        </header>
-
-        <section class="HeroCenter">
-            <div class="cabeza">
-                <h1 class="titulo">Value Proposition</h1>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe perspiciatis
-                    deserunt ex quod incidunt.</p>
-                <a href="#" class="btn btn-hero">Start free trial</a>
-            </div>
-
-        </section>
-
-        <section class="FeatureListLeft">
-            <div class="list-left">
-                <h2 class="titulo-2">
-                    Feature that is amazing
-                </h2>
-                <p class="parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, debitis eaque obcaecati est voluptatem aspernatur modi pariatur accusantium.
-                </p>
-                <div class="listado">
-                    <ul class="listas">
-                        <li class="beneficios">Benefit of Feature</li>
-                        <li class="beneficios">Benefit of Feature</li>
-                        <li class="beneficios">Benefit of Feature</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cuadro">
-                <div class="pintura">
-                    <img src="lobo.jpg" alt="" class="random-image">
-                </div>
-            </div>
-        </section>
-
-        <section class="PostsBlogLeft">
-
-        </section>
-
-        <section class="SocialProof">
-
-        </section>
-
-        <footer class="FooterBlogPost">
-
-        </footer>
-
-    </div>
-
+        </div>
+    </section>
 
 
 </body>
