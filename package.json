@@ -1,0 +1,24 @@
+{
+  "name": "grid-css",
+  "version": "1.0.0",
+  "description": "Practica",
+  "dependencies": {
+    "autoprefixer": "^10.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkhamZX/Grid-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkhamZX/Grid-css/issues"
+  },
+  "homepage": "https://github.com/ArkhamZX/Grid-css#readme"
+}
