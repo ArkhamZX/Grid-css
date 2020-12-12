@@ -107,6 +107,28 @@
     .feature__right--img {
       width: 50%; }
 
+.post {
+  display: grid;
+  grid-row: Post;
+  grid-column: 1 / 7; }
+  .post__cards {
+    display: grid;
+    padding: 10rem 10rem;
+    grid-auto-flow: column;
+    grid-column-gap: 5rem;
+    background-color: #f2f2f2; }
+  .post__one {
+    color: white;
+    font-size: 1rem; }
+  .post__card--1 {
+    background-color: black; }
+  .post__card__one {
+    color: wheat; }
+  .post__card--2 {
+    background-color: #888888; }
+  .post__card--3 {
+    background-color: #ffffff; }
+
 *,
 *::before,
 *::after {
