@@ -1,5 +1,59 @@
 .hero
 {
     display: grid;
-    grid-row: 2 / 8 span;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-row: hero;
+    grid-column: 1 / 7;
+    
+
+    &__center
+    {
+        display: grid;
+        grid-gap: 5rem;
+    }
+
+    &__title
+    {
+        font-size: 5.9rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__parrafo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__start
+    {
+        &--btn
+        {   
+            color: white;
+            background-color: black;
+            height: 5rem;
+            width: 30%;
+            font-size: 1.6rem;
+            font-weight: 900;
+            border: 1px solid white;
+            border-radius: 5px;
+            border: none;
+            transition: .3s;
+            
+
+            &:hover
+            {
+                color: black;
+                background-color: white;
+                border: 1px solid black;
+            }
+        }
+    }
 }

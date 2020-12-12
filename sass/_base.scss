@@ -31,5 +31,5 @@ html,body
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 6rem repeat(16, 1fr);
+    grid-template-rows: [header] 6rem [hero] 70rem [Feature] 60rem [Post] 76rem [Social] 27rem [footer] 38rem;
 }
