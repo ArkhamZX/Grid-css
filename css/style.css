@@ -110,24 +110,32 @@
 .post {
   display: grid;
   grid-row: Post;
-  grid-column: 1 / 7; }
+  grid-column: 1 / 7;
+  background-color: #f2f2f2; }
   .post__cards {
     display: grid;
-    padding: 10rem 10rem;
-    grid-auto-flow: column;
+    padding: 6rem 6rem;
+    align-items: center;
     grid-column-gap: 5rem;
-    background-color: #f2f2f2; }
+    grid-template-columns: repeat(3, minmax(min-content, 76rem)); }
+  .post__info {
+    display: flex;
+    justify-content: center; }
   .post__one {
     color: white;
+    line-height: 6rem;
+    font-weight: 400;
+    text-align: left;
     font-size: 1rem; }
   .post__card--1 {
-    background-color: black; }
-  .post__card__one {
-    color: wheat; }
+    background-color: black;
+    height: 60rem; }
   .post__card--2 {
-    background-color: #888888; }
+    background-color: #888888;
+    height: 60rem; }
   .post__card--3 {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    height: 60rem; }
 
 *,
 *::before,

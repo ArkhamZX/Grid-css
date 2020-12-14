@@ -3,20 +3,30 @@
     display: grid;
     grid-row: Post;
     grid-column: 1 / 7;
+    background-color: #f2f2f2;
     
 
     &__cards
     {
         display: grid;
-        padding: 10rem 10rem;
-        grid-auto-flow: column;
+        padding: 6rem 6rem;
+        align-items: center;
         grid-column-gap: 5rem;
-        background-color: #f2f2f2;
+        grid-template-columns: repeat(3, minmax(min-content, 76rem));
+    }
+
+    &__info
+    {
+        display: flex;
+        justify-content: center;
     }
 
     &__one
     {
         color: white;
+        line-height: 6rem;
+        font-weight: 400;
+        text-align: left;
         font-size: 1rem;
     }
 
@@ -25,21 +35,20 @@
         &--1
         {
             background-color: black;
-        }
+            height: 60rem;
 
-        &__one
-        {
-            color: wheat;
         }
 
         &--2
         {
             background-color: #888888;
+            height: 60rem;
         }
 
         &--3
         {
             background-color: #ffffff;
+            height: 60rem;
         }
     }
 }
