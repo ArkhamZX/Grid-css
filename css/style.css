@@ -103,9 +103,14 @@
     font-weight: 400; }
   .feature__right {
     display: flex;
-    justify-content: center; }
-    .feature__right--img {
-      width: 50%; }
+    justify-content: center;
+    align-items: center; }
+  .feature__block {
+    width: 48rem;
+    height: 36rem;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black; }
 
 .post {
   display: grid;
@@ -113,12 +118,6 @@
   background-color: #f2f2f2;
   grid-row: Post;
   grid-column: 1 / 7; }
-  .post__Category {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 6rem;
-    height: 2rem; }
   .post__cards {
     display: grid;
     grid-auto-flow: column;
@@ -138,12 +137,41 @@
     width: 37rem;
     height: 60rem;
     background-color: #888888; }
+  .post__card-3 {
+    height: 60rem;
+    width: 37rem; }
   .post__sub-card-2 {
     display: grid;
     justify-content: center; }
+  .post__Category {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem; }
+  .post__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 2rem;
+    width: 10.1rem;
+    height: 3rem; }
+  .post__item-2 {
+    display: flex;
+    align-items: center;
+    height: 15rem;
+    width: 32rem; }
   .post__parrafo {
-    width: 27.5rem;
-    height: 10.1rem; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    width: 28.5rem;
+    height: 13.1rem;
+    color: white;
+    background-color: black; }
   .post__title {
     display: flex;
     align-items: center; }
@@ -153,6 +181,15 @@
     font-weight: 400;
     height: 50rem;
     width: 21rem; }
+
+.user {
+  width: 36rem;
+  height: 28.5rem; }
+  .user__one {
+    width: 36rem;
+    height: 28.5rem;
+    color: black;
+    background-color: white; }
 
 *,
 *::before,

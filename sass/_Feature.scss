@@ -38,12 +38,16 @@
     {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
 
-        &--img
-        {
-            
-            width: 50%;
-        }
+    &__block
+    {
+        width: 48rem;
+        height: 36rem;
+        border-radius: 8px;
+        background-color: white;
+        border: 2px solid black;
     }
 
 
