@@ -1,3 +1,31 @@
+.social {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row: Social;
+  grid-column: 1 / 7;
+  background-color: #f2f2f2; }
+  .social__item {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-row-gap: 3rem;
+    width: 68rem; }
+  .social__item-2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 3rem; }
+  .social__title {
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .social__circule {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem; }
+
 .header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -66,8 +94,8 @@
   .hero__start--btn {
     color: white;
     background-color: black;
-    height: 5rem;
-    width: 30%;
+    height: 6.4rem;
+    width: 28rem;
     font-size: 1.6rem;
     font-weight: 900;
     border: 1px solid white;
@@ -138,6 +166,11 @@
     height: 60rem;
     background-color: #888888; }
   .post__card-3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 3rem;
+    grid-template-rows: repeat(2, 1fr);
     height: 60rem;
     width: 37rem; }
   .post__sub-card-2 {
@@ -182,14 +215,43 @@
     height: 50rem;
     width: 21rem; }
 
-.user {
-  width: 36rem;
-  height: 28.5rem; }
-  .user__one {
-    width: 36rem;
-    height: 28.5rem;
-    color: black;
-    background-color: white; }
+.user__item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  width: 37rem;
+  height: 17.5rem; }
+
+.user__one {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+  height: 28.5rem;
+  color: black;
+  background-color: white; }
+
+.user__two {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 37rem;
+  height: 28.5rem;
+  color: black;
+  background-color: white; }
+
+.parrafo {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.Category-2 {
+  font-size: 1.4rem;
+  font-weight: 400; }
+
+.Author {
+  font-size: 1.4rem;
+  font-weight: 400; }
 
 *,
 *::before,

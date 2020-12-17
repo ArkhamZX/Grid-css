@@ -1,0 +1,41 @@
+.social
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row: Social;
+    grid-column: 1 / 7;
+    background-color: #f2f2f2;
+
+    &__item
+    {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-row-gap: 3rem;
+        width: 68rem;
+    }
+
+    &__item-2
+    {
+       display: grid;
+       grid-auto-flow: column;
+       grid-column-gap: 3rem; 
+    }
+
+    &__title
+    {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    &__circule
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+    }
+}
