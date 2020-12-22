@@ -1,0 +1,19 @@
+.footer
+{
+    display: grid;
+    grid-row: footer;
+    grid-column: 1 / 7;
+    background-color: #f2f2f2;
+
+    &__container
+    {
+        display: grid;
+    }
+}
+
+.line
+{
+    border: 1px solid black;
+    height: 32rem;
+    width: 3px;
+}
