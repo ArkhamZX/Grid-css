@@ -255,16 +255,39 @@
 
 .footer {
   display: grid;
+  align-content: center;
+  justify-items: center;
   grid-row: footer;
   grid-column: 1 / 7;
   background-color: #f2f2f2; }
   .footer__container {
-    display: grid; }
+    display: grid;
+    grid-auto-flow: column;
+    width: 60%; }
+  .footer__sub-container {
+    display: grid;
+    height: 16rem;
+    width: 37rem; }
+  .footer__title {
+    font-size: 1.6rem;
+    font-weight: 400; }
+  .footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 22rem;
+    height: 17rem; }
+  .footer__parrafo {
+    width: 37rem;
+    height: 8rem; }
 
 .line {
+  display: inline-block;
   border: 1px solid black;
-  height: 32rem;
-  width: 3px; }
+  height: 30rem;
+  width: 1px; }
+
+li {
+  list-style: none; }
 
 *,
 *::before,
